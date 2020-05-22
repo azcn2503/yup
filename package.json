@@ -1,6 +1,6 @@
 {
   "name": "@azcn2503/yup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A yarn upgrade script that works.",
   "main": "index.js",
   "author": "Aaron Cunnington <azcn2503@gmail.com>",
@@ -13,5 +13,9 @@
   },
   "dependencies": {
     "chalk": "3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azcn2503/yup"
   }
 }
