@@ -1,0 +1,17 @@
+{
+  "name": "@azcn2503/yup",
+  "version": "1.0.0",
+  "description": "A yarn upgrade script that works.",
+  "main": "index.js",
+  "author": "Aaron Cunnington <azcn2503@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "yup": "bin/yup.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "chalk": "3.0.0"
+  }
+}
