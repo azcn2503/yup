@@ -8,6 +8,7 @@ A `yarn upgrade` that works.
 
 - Install globally with `npm install -g @azcn2503/yup`
 - From your repository: `yup package-name`
+- To update multiple packages: `yup package-name-1 package-name-2`
 
 ### How it works
 
