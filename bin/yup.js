@@ -60,7 +60,7 @@ fs.readFile("package.json", "utf8", async (err, file) => {
       devPackagesToUpgrade.push({
         name: requestedPackage,
         version: devDependencies[requestedPackage],
-        comment: "devDependency"
+        type: "devDependency"
       });
     } else if (dependencies[requestedPackage]) {
       packagesToUpgrade.push({
