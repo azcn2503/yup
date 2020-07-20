@@ -13,3 +13,10 @@ A `yarn upgrade` that works.
 ### How it works
 
 `yup` reads your `package.json` to pick out the version string, and instead of doing a `yarn upgrade -P package-name` swaps this out for something like: `yarn add --dev package-name@3.2.1` which I have discovered is far more reliable.
+
+#### Example
+
+- You run `yup my-great-package`
+- Yup checks where this exists in your package.json dependencies (either in `dependencies` or `devDependencies`).
+- Yup checks the version of the package; this supports semantic version strings, branch names, git tags, etc.
+- Yup builds and runs a command to re-add the package at the specified version, which bumps the yarn.lock resolved version of the package.

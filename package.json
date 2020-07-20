@@ -1,6 +1,6 @@
 {
   "name": "@azcn2503/yup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A yarn upgrade script that works.",
   "author": "Aaron Cunnington <azcn2503@gmail.com>",
   "license": "MIT",
