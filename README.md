@@ -12,7 +12,9 @@ A `yarn upgrade` that works.
 
 ### How it works
 
-`yup` reads your `package.json` to pick out the version string, and instead of doing a `yarn upgrade -P package-name` swaps this out for something like: `yarn add --dev package-name@3.2.1` which I have discovered is far more reliable.
+`yup` reads your `package.json` to pick out the version string, and instead of doing a `yarn upgrade -P package-name` swaps this out for something like: `yarn remove package-name && yarn add --dev package-name@3.2.1` which I have discovered is far more reliable.
+
+`yup` will make a backup of your `package.json` and `yarn.lock` files before making changes, and roll them back if anything fails or if the command is cancelled.
 
 #### Example
 
